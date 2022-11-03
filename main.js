@@ -13,23 +13,9 @@ You are given the following information:
 Calculate how many squats a bootcamper will be able to do on the last day of their bootcamp.
 Output should be an integer.
 
-The inputs for the parameters should be integers, if not return "invalid input"
+The inputs for the parameters should be integers, if not, throw an error.
 */
 
 export function squats(weeks, starting, increase) {
-  if (
-    typeof weeks != "Number" ||
-    typeof starting != "Number" ||
-    typeof increase != "Number"
-  ) {
-    return "invalid input";
-  }
-
-  const days = weeks * 7;
-
-  let sum = 0;
-  for (let i = 0; i < days; i++) {
-    sum += starting + i * increase;
-  }
-  return sum;
+  // Your code goes here!
 }
